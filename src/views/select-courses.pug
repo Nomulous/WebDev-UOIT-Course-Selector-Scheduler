@@ -1,0 +1,70 @@
+extends layout
+block header
+	link(rel="stylesheet", href="/styles/select-courses.css")
+	link(rel="stylesheet", href="/styles/styles.css")
+	script(src="/scripts/select-courses.js")
+
+
+block precontent
+block content
+	div(id="usercourses")
+		table(id="selectedcourses")
+			thead
+				tr
+					td Semester
+					td Subject
+					td Code
+					td Delete?
+			tbody
+	div(id="useraddcourses", class="spacing")
+		select(id="subject")
+			option(value="ALSU") ALSU - Academic Learning and Success
+			option(value="AEDT") AEDT - Adult Education and Digital Tech
+			option(value="ANTH") ANTH - Anthrpology
+			option(value="APBS") APBS - Applied Bioscience
+			option(value="AUTE") AUTE - Automotive Engineering
+			option(value="BIOL") BIOL - Biology
+			option(value="BUSI") BUSI - Business
+			option(value="CHEM") CHEM - Chemistry
+			option(value="CHIN") CHIN - Chinese Studies
+			option(value="COMM") COMM - Communications
+			option(value="CSCI") CSCI - Computer Science
+			option(value="CRMN") CRMN - Criminology and Justice
+			option(value="ECON") ECON - Economics
+			option(value="EDUC") EDUC - Education
+			option(value="ELEE") ELEE - Electrical Engineering
+			option(value="ENGR") ENGR - Engineering
+			option(value="ENGL") ENGL - English
+			option(value="EAP") EAP - English for Academic Purposes
+			option(value="ENVS") ENVS - Environmental Science
+			option(value="FSCI") FSCI - Forensic Science
+			option(value="FREN") FREN - French
+			option(value="GRMN") GRMN - German
+			option(value="HLSC") HLSC - Health Science
+			option(value="HIST") HIST - History
+			option(value="INDG") INDG - Indigenous Studies
+			option(value="INFR") INFR - Information Technology
+			option(value="LGLS") LGLS - Legal Studies
+			option(value="MANE") MANE - Manufacturing Engineering
+			option(value="MITS") MITS - Masters of IT Security
+			option(value="MTSC") MTSC - Materials Science
+			option(value="MATH") MATH - Mathematics
+			option(value="MECE") MECE - Mechanical Engineering
+			option(value="MLSC") MLSC - Medical Lab Science
+			option(value="MCSC") MCSC - Modeling and Computational Science
+			option(value="NUCL") NUCL - Nuclear
+			option(value="PHIL") PHIL - Philosophy
+			option(value="PHY") PHY - Physics
+			option(value="POSC") POSC - Political Science
+			option(value="PSYC") PSYC - Psychology
+			option(value="RADI") RADI - Radiation Science
+			option(value="SCIE") SCIE - Science
+			option(value="SCCO") SCCO - Science Co-op Work Term
+			option(value="SSCI") SSCI - Social Science
+			option(value="SOCI") SOCI - Sociology
+			option(value="SOFE") SOFE - Software Engineering
+			option(value="SPAN") SPAN - Spanish
+			option(value="STAT") STAT - Statistics
+		input(type="text", id="code", placeholder="Course code (e.g. 1000U)", title="Course code")
+		button(class="btn" id="submit") Submit
+	div(id="added-messages", class="spacing")

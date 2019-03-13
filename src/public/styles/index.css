@@ -1,0 +1,83 @@
+body {
+    font-family: "Lato", sans-serif;
+    height: 100%;
+    width: 100%;
+}
+
+p {
+    font-family: "Comic-Sans", cursive;
+    color: #FFF;
+    padding: 5px;
+}
+.text-vcenter {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.list-group-item {
+    display: list-item;
+} 
+
+#introduction {
+    background: url("/images/campus_shot.jpg") no-repeat center center fixed;
+    display: table;
+    height: 100vh;
+    position: relative;
+    width: 100%;
+}
+
+#howtouse {
+    height: 100vh;
+    padding-top: 40px;
+}
+
+#howtouse p {
+    color: #000;
+}
+
+#aboutus {
+    height: 95vh;
+    padding-top: 40px;
+    background: url("/images/library.jpg") no-repeat center center fixed;
+    
+}
+.sidenav {
+    list-style: none;
+    height: 100%;
+    width: 0;
+    position: absolute;
+    z-index: 101;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}

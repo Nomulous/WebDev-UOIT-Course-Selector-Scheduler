@@ -1,0 +1,26 @@
+{
+  "name": "src",
+  "version": "1.0.0",
+  "description": "CSCI 3230U - Final Project - UOIT Course Scheduler",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nomulous/csci3230.git"
+  },
+  "author": "Devon McGrath and Martin Tuzim",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nomulous/csci3230/issues"
+  },
+  "homepage": "https://github.com/Nomulous/csci3230#readme",
+  "dependencies": {
+    "cookies": "^0.7.1",
+    "express": "^4.16.3",
+    "mongoose": "^5.0.11",
+    "pug": "^2.0.3",
+    "uuid": "^3.2.1"
+  }
+}

@@ -1,0 +1,45 @@
+- var year = ''
+- var t = ''
+
+doctype
+html
+	head
+		title= title
+		meta(name="viewport", content="width=device-width, initial-scale=1.0")
+		meta(http-equiv="X-UA-Compatible", content="IE=edge,chrome=1")
+		meta(name="author", content="Devon McGrath, Martin Tuzim")
+		
+		script(src="https://code.jquery.com/jquery-3.0.0.min.js")
+		link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css")
+		script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js")
+		
+		link(rel="stylesheet", href="/styles/styles.css")
+		script(src="/scripts/core.js")
+		
+		block header
+	body
+		span(class="pre-nav-op") Menu
+		ul(class="nav-op")
+			li
+				a(href="/") Home
+			li
+				a(href="/select-courses") Select Courses
+			li
+				a(href="/schedule-creator") Schedule Creator
+			li
+				a(href="/programs") Program Browser
+		
+		div(id="user-info")
+			span(class="banner-terms") Term:
+				select
+					each term in terms
+						-year = term.slice(0, 4)
+						-t = term.slice(4)
+						option(value= term)= (t == '01'? 'Winter ' : (t == '05'? 'Summer ' : 'Fall ')) + year
+			span Courses: 
+			span(class="banner-courses") None
+		
+		block precontent
+		
+		div(class="content")
+			block content

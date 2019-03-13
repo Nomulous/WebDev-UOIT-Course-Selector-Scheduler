@@ -1,0 +1,79 @@
+#program {
+	display: block;
+	margin: 15px auto 0 auto;
+	width: 80%;
+}
+
+#program:focus {
+	box-shadow: 0 2px 3px 1px rgba(0,0,0,0.1);
+	transition: box-shadow 1s;
+}
+
+#program-result {
+	margin: 0 auto 25px auto;
+	z-index: 1;
+	width: 80%;
+}
+
+#program-result * {
+	padding: 8px;
+	margin: 0 auto;
+	border-left: 1px solid black;
+	border-bottom: 1px solid black;
+	border-right: 1px solid black;
+	cursor: pointer;
+}
+
+#program-result *:hover {
+	color: white;
+	background-color: #0078CA;
+}
+
+#courses {
+	margin: 10px 0;
+	width: 100%;
+	border-radius: 5px;
+	box-shadow: inset 0 0 5px #003C71;
+}
+#courses, #courses th, #courses td {
+	border-collapse: collapse;
+}
+
+#courses th, #courses td {
+	padding: 8px;
+	margin: 0;
+}
+
+#courses th {
+	color: white;
+	background-color: #003C71;
+	background: -webkit-linear-gradient(#003C71, #005ACA);
+	background: -moz-linear-gradient(#003C71, #005ACA);
+	background: -o-linear-gradient(#003C71, #005ACA);
+	background: linear-gradient(#003C71, #005A9F);
+}
+
+.semester {
+	color: white;
+	background-color: #003C71;
+	background: -webkit-linear-gradient(#003C71, #0078CA);
+	background: -moz-linear-gradient(#003C71, #0078CA);
+	background: -o-linear-gradient(#003C71, #0078CA);
+	background: linear-gradient(#005A9F, #0078CA);
+}
+
+.course {
+	cursor: pointer;
+}
+
+.course:hover {
+	background-color: #EFEFFF;
+}
+
+.course-info {
+	background-color: #EFEFEF;
+}
+
+#added {
+	margin: 10px 0;
+}

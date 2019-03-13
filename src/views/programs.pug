@@ -1,0 +1,28 @@
+extends layout
+block header
+	link(rel="stylesheet", href="/styles/programs.css")
+	script(src="/scripts/programs.js")
+block content
+	- var year = ''
+	- var t = ''
+	h1 Program
+	input(type="text", id="program", class="border-box", onkeyup="updateSearch();", spellcheck="false", autofocus)
+	div(id="program-result")
+	
+	table(id="courses" class="border-box")
+		td
+			p
+				i Enter your program above
+	div(class="banner-terms spacing") Add To Term:
+		select
+			each term in terms
+				-year = term.slice(0, 4)
+				-t = term.slice(4)
+				option(value= term)= (t == '01'? 'Winter ' : (t == '05'? 'Summer ' : 'Fall ')) + year
+	div(class="spacing") Added Courses: 
+		span(class="banner-courses")
+	div(id="added")
+	div(id="added-messages", class="spacing")
+	div(id="panel")
+		span(class="btn-clear", onclick="clearSelection();") Clear Selection
+		span(class="btn", onclick="addCourses();") Add Courses

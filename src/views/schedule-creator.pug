@@ -1,0 +1,97 @@
+extends layout
+block header
+	link(rel="stylesheet", href="/styles/schedule.css")
+	script(src="/scripts/schedule.js")
+	script(src="/scripts/modernizr.js")
+block content
+	button(class="btn" data-popup-open="exportcrn" href="#") Export CRNs
+	div(class="popup" data-popup="exportcrn")
+		div(class="popup-inner")
+			h2 Your selected CRNs
+			div(id="crns")
+			a(data-popup-close="exportcrn" href="#") Close
+			a(class="popup-close" data-popup-close="exportcrn" href="#") x
+	div(id="dropdown")
+		h2 Select your courses here!
+
+
+	div(class="cd-schedule")
+		div(class="timeline")
+			ul
+				li
+					span 8:00
+				li
+					span 8:30
+				li
+					span 9:00
+				li
+					span 9:30
+				li
+					span 10:00
+				li
+					span 10:30
+				li
+					span 11:00
+				li
+					span 11:30
+				li
+					span 12:00
+				li
+					span 12:30
+				li
+					span 13:00
+				li
+					span 13:30
+				li
+					span 14:00
+				li
+					span 14:30
+				li
+					span 15:00
+				li
+					span 15:30
+				li
+					span 16:00
+				li
+					span 16:30
+				li
+					span 17:00
+				li
+					span 17:30
+				li
+					span 18:00
+				li
+					span 18:30
+				li
+					span 19:00
+				li
+					span 19:30
+				li
+					span 20:00
+				li
+					span 20:30
+				li
+					span 21:00
+
+		div(class="events")
+			ul
+				li(class="events-group")
+					div(class="top-info")
+						span Monday
+					ul(id="monday")
+				li(class="events-group")
+					div(class="top-info")
+						span Tuesday
+					ul(id="tuesday")
+				li(class="events-group")
+					div(class="top-info")
+						span Wednesday
+					ul(id="wednesday")
+				li(class="events-group")
+					div(class="top-info")
+						span Thursday
+					ul(id="thursday")
+				li(class="events-group")
+					div(class="top-info")
+						span Friday
+					ul(id="friday")

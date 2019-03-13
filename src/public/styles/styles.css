@@ -1,0 +1,171 @@
+body {margin: 0; padding: 39px 0 0 0; font-family: "Arial";}
+h1 {text-align: center; color: #0078CA; text-shadow: 0 1px #003C71, 1px 0 #003C71;}
+input[type=text] {padding: 8px;}
+
+.border-box {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.content {
+	padding: 8px;
+}
+
+.pre-nav-op, .nav-op {z-index: 100;}
+
+.pre-nav-op {
+	padding: 8px;
+	text-align: center;
+	display: none;
+	color: white;
+	background-color: #003C71;
+	cursor: pointer;
+}
+
+.nav-op {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	margin: 0;
+	padding: 5px 0 4px 0;
+	text-align: center;
+	background-color: #0078CA;
+	background: -webkit-linear-gradient(#003C71, #0078CA);
+	background: -moz-linear-gradient(#003C71, #0078CA);
+	background: -o-linear-gradient(#003C71, #0078CA);
+	background: linear-gradient(#003C71, #0078CA);
+}
+
+.nav-op li {
+	list-style-type: none;
+	margin: 5px;
+	padding: 0;
+	display: inline-block;
+}
+
+.nav-op li a {
+	text-decoration: none;
+	color: white;
+	padding: 10px 8px;
+}
+
+.nav-op li a:hover {color: #EFEFFF; text-shadow: 0 0 3px black;}
+
+.pre-nav-op:hover+.nav-op {
+	display: block;
+}
+
+.nav-op:hover {display: block;}
+
+.btn, .btn-simple, .btn-clear {
+	display: inline-block;
+	text-decoration: none;
+	font-weight: bold;
+	border-radius: 5px;
+	padding: 8px;
+	margin: 0 5px;
+	cursor: pointer;
+}
+
+.btn {
+	color: white;
+	background-color: #003C71;
+	background: -webkit-linear-gradient(#0078CA, #003C71, #0078CA);
+	background: -moz-linear-gradient(#0078CA, #003C71, #0078CA);
+	background: -o-linear-gradient(#0078CA, #003C71, #0078CA);
+	background: linear-gradient(#0078CA, #003C71, #0078CA);
+}
+
+.btn:hover {
+	color: white;
+	background-color: #005C91;
+	background: -webkit-linear-gradient(#0098EA, #005C91, #0098EA);
+	background: -moz-linear-gradient(#0098EA, #005C91, #0098EA);
+	background: -o-linear-gradient(#0098EA, #005C91, #0098EA);
+	background: linear-gradient(#0098EA, #005C91, #0098EA);
+}
+
+.btn-simple {
+	color: black;
+	border: 1px solid black;
+	background-color: #CFCFDF;
+	background: -webkit-linear-gradient(#DFDFEF, #BFBFCF);
+	background: -moz-linear-gradient(#DFDFEF, #BFBFCF);
+	background: -o-linear-gradient(#DFDFEF, #BFBFCF);
+	background: linear-gradient(#DFDFEF, #BFBFCF);
+}
+
+.btn-simple:hover {
+	background-color: #EFEFFF;
+	background: -webkit-linear-gradient(white, #CFCFDF);
+	background: -moz-linear-gradient(white, #CFCFDF);
+	background: -o-linear-gradient(white, #CFCFDF);
+	background: linear-gradient(white, #CFCFDF);
+}
+
+.btn-clear {
+	color: white;
+	background-color: #CF0000;
+	background: -webkit-linear-gradient(#DF0000, #AF0000);
+	background: -moz-linear-gradient(#DF0000, #AF0000);
+	background: -o-linear-gradient(#DF0000, #AF0000);
+	background: linear-gradient(#DF0000, #AF0000);
+}
+
+.btn-clear:hover {
+	background-color: #EF0000;
+	background: -webkit-linear-gradient(#FF0000, #CF0000);
+	background: -moz-linear-gradient(#FF0000, #CF0000);
+	background: -o-linear-gradient(#FF0000, #CF0000);
+	background: linear-gradient(#FF0000, #CF0000);
+}
+
+#user-info {
+	display: none;
+	padding: 8px;
+	background-color: lightblue;
+}
+
+.banner-terms select {
+	padding: 5px;
+	margin: 0 8px;
+	border-radius: 4px;
+}
+
+.spacing {
+	margin: 10px 0;
+}
+
+.status {
+	padding: 5px;
+	border-radius: 3px;
+}
+
+.grey {
+	background-color: #CCCCCC;
+	border-left: 5px solid #AAAAAA;
+}
+
+.green {
+	background-color: #CFFFCF;
+	border-left: 5px solid #AAFFAA;
+}
+
+.red {
+	background-color: #FFCFCF;
+	border-left: 5px solid #FF0000;
+}
+
+.yellow {
+	background-color: #FFEF20;
+	border-left: 5px solid #CFBF00;
+}
+
+@media screen and (max-width: 675px) {
+	body {padding: 0;}
+	.pre-nav-op {display: block;}
+	.nav-op {position: relative; display: none;}
+	.nav-op li {display: block; margin: 20px 0;}
+}
